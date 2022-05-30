@@ -39,7 +39,7 @@ router.post(
   }
 );
 // get certificate using POST : " localhost:5000/api/auth/certificate "
-router.get(
+router.post(
   '/certificate',
   [
     body('serial', 'enter serial no. in numeric').isNumeric(),
